@@ -1,14 +1,16 @@
 const express=require('express');
 const router=express.Router();
 const Post=require("../model/Post");
-router.get('/',async(req,res)=>{
-  try{
-    const posts = await Post.find()
-    res.json(posts);
-  }catch(err){
-    res.json({message:err});
-  }
+
+router.get('/', (req,res)=>{
+    Post.find({})
+		.then(data => {
+			res.json(data)
+		}).catch(err => {
+			res.json({message: err})
+		})
 });
+
 router.post('/',async(req,res)=>{
   const post=new Post({
     title:req.body.title,
@@ -52,4 +54,5 @@ router.patch('/:postId',async(req,res)=>{
   }
 
 });
+
 module.exports=router;
