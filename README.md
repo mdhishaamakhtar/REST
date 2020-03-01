@@ -14,5 +14,5 @@ npm install
 npm start
 ```
 # Contributors
-[Md Hishaam Akhtar](https://github.com/mdhishaamakhtar)
-[Angad Sharma](https://github.com/L04DB4L4NC3R)
+- [Md Hishaam Akhtar](https://github.com/mdhishaamakhtar)
+- [Angad Sharma](https://github.com/L04DB4L4NC3R)
