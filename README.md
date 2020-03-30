@@ -4,6 +4,7 @@
 
 # Pre-Requisites
 - Node.js and npm installed
+- Make sure to provide your PORT and DB_CONNECTION url of MongoDB in a .env file
 # Instructions to install packages
 ```bash
 npm install
